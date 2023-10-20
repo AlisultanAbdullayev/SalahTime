@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C11960032AC3C20000DF8954 /* CalendarRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11960022AC3C20000DF8954 /* CalendarRowView.swift */; };
+		C156E0212AE2710D00E2C3EF /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1C145A82ABC400500ACBD32 /* WidgetKit.framework */; };
+		C156E0222AE2710D00E2C3EF /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1C145AA2ABC400500ACBD32 /* SwiftUI.framework */; };
+		C156E0252AE2710D00E2C3EF /* SalahTimeWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C156E0242AE2710D00E2C3EF /* SalahTimeWidgetBundle.swift */; };
+		C156E0272AE2710D00E2C3EF /* SalahTimeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C156E0262AE2710D00E2C3EF /* SalahTimeWidget.swift */; };
+		C156E0292AE2710E00E2C3EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C156E0282AE2710E00E2C3EF /* Assets.xcassets */; };
+		C156E02D2AE2710E00E2C3EF /* SalahTimeWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C156E0202AE2710D00E2C3EF /* SalahTimeWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C156E0322AE2720800E2C3EF /* PrayerTimesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C156E0312AE2720800E2C3EF /* PrayerTimesList.swift */; };
+		C156E0332AE273CA00E2C3EF /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C176AAF32AAD249A0081D41C /* LocationManager.swift */; };
+		C156E0342AE273CA00E2C3EF /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE5ECF2AB9E3ED009766CB /* NotificationManager.swift */; };
+		C156E0352AE273CA00E2C3EF /* PrayerTimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE5ECD2AB9D7A1009766CB /* PrayerTimeManager.swift */; };
+		C156E0362AE273FE00E2C3EF /* PrayerTimesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C156E0312AE2720800E2C3EF /* PrayerTimesList.swift */; };
+		C156E0372AE2743800E2C3EF /* SalahTimeRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16E1C472A890ABA00D24C23 /* SalahTimeRowView.swift */; };
+		C156E0392AE2749B00E2C3EF /* Adhan in Frameworks */ = {isa = PBXBuildFile; productRef = C156E0382AE2749B00E2C3EF /* Adhan */; };
+		C156E03A2AE274C800E2C3EF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE5ED22AB9E552009766CB /* Extensions.swift */; };
+		C156E0402AE29CFF00E2C3EF /* SalahTimeWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C156E03F2AE29CFF00E2C3EF /* SalahTimeWidgetEntryView.swift */; };
+		C156E0412AE29D1E00E2C3EF /* WidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C156E03B2AE29C1400E2C3EF /* WidgetProvider.swift */; };
+		C156E0422AE29D2400E2C3EF /* WidgetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C156E03D2AE29C8600E2C3EF /* WidgetEntry.swift */; };
+		C16E1C2F2A88F8CA00D24C23 /* SalahTimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16E1C2E2A88F8CA00D24C23 /* SalahTimeApp.swift */; };
+		C16E1C332A88F8CD00D24C23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C16E1C322A88F8CD00D24C23 /* Assets.xcassets */; };
+		C16E1C3E2A88F8EC00D24C23 /* Adhan in Frameworks */ = {isa = PBXBuildFile; productRef = C16E1C3D2A88F8EC00D24C23 /* Adhan */; };
+		C16E1C482A890ABA00D24C23 /* SalahTimeRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16E1C472A890ABA00D24C23 /* SalahTimeRowView.swift */; };
+		C16E1C4E2A8924C800D24C23 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16E1C4D2A8924C800D24C23 /* SettingsView.swift */; };
+		C16E1C502A8924DE00D24C23 /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16E1C4F2A8924DE00D24C23 /* EventsView.swift */; };
+		C176AAF42AAD249A0081D41C /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C176AAF32AAD249A0081D41C /* LocationManager.swift */; };
+		C176AAF82AAD24B50081D41C /* QiblaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C176AAF72AAD24B50081D41C /* QiblaView.swift */; };
+		C176AAFA2AAD24BA0081D41C /* TabPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C176AAF92AAD24BA0081D41C /* TabPageView.swift */; };
+		C176AB132AAD26180081D41C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C176AAFB2AAD24F20081D41C /* ContentView.swift */; };
+		C1A12AD82AAC0F3B005B08E1 /* LocationNotFoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A12AD72AAC0F3B005B08E1 /* LocationNotFoundView.swift */; };
+		C1D2509E2ABAE8FC009A4C94 /* SettingsRowWithSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D2509D2ABAE8FC009A4C94 /* SettingsRowWithSelection.swift */; };
+		C1FE5ECE2AB9D7A1009766CB /* PrayerTimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE5ECD2AB9D7A1009766CB /* PrayerTimeManager.swift */; };
+		C1FE5ED02AB9E3ED009766CB /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE5ECF2AB9E3ED009766CB /* NotificationManager.swift */; };
+		C1FE5ED32AB9E552009766CB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE5ED22AB9E552009766CB /* Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C156E02B2AE2710E00E2C3EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C16E1C232A88F8CA00D24C23 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C156E01F2AE2710D00E2C3EF;
+			remoteInfo = SalahTimeWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C1728E742ABB149700C924AA /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C156E02D2AE2710E00E2C3EF /* SalahTimeWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C176AAC22AAD21050081D41C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C11960022AC3C20000DF8954 /* CalendarRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarRowView.swift; sourceTree = "<group>"; };
+		C156E0202AE2710D00E2C3EF /* SalahTimeWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SalahTimeWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C156E0242AE2710D00E2C3EF /* SalahTimeWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalahTimeWidgetBundle.swift; sourceTree = "<group>"; };
+		C156E0262AE2710D00E2C3EF /* SalahTimeWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalahTimeWidget.swift; sourceTree = "<group>"; };
+		C156E0282AE2710E00E2C3EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C156E02A2AE2710E00E2C3EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C156E0312AE2720800E2C3EF /* PrayerTimesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimesList.swift; sourceTree = "<group>"; };
+		C156E03B2AE29C1400E2C3EF /* WidgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetProvider.swift; sourceTree = "<group>"; };
+		C156E03D2AE29C8600E2C3EF /* WidgetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetEntry.swift; sourceTree = "<group>"; };
+		C156E03F2AE29CFF00E2C3EF /* SalahTimeWidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalahTimeWidgetEntryView.swift; sourceTree = "<group>"; };
+		C156E0432AE2BB7E00E2C3EF /* SalahTimeWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SalahTimeWidgetExtension.entitlements; sourceTree = "<group>"; };
+		C156E0442AE2BB8E00E2C3EF /* SalahTime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SalahTime.entitlements; sourceTree = "<group>"; };
+		C16E1C2E2A88F8CA00D24C23 /* SalahTimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalahTimeApp.swift; sourceTree = "<group>"; };
+		C16E1C322A88F8CD00D24C23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C16E1C472A890ABA00D24C23 /* SalahTimeRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalahTimeRowView.swift; sourceTree = "<group>"; };
+		C16E1C4D2A8924C800D24C23 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		C16E1C4F2A8924DE00D24C23 /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
+		C176AAF32AAD249A0081D41C /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		C176AAF72AAD24B50081D41C /* QiblaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QiblaView.swift; sourceTree = "<group>"; };
+		C176AAF92AAD24BA0081D41C /* TabPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabPageView.swift; sourceTree = "<group>"; };
+		C176AAFB2AAD24F20081D41C /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C1A12AD72AAC0F3B005B08E1 /* LocationNotFoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationNotFoundView.swift; sourceTree = "<group>"; };
+		C1C145A82ABC400500ACBD32 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		C1C145AA2ABC400500ACBD32 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		C1C1BF1B2ACE164100506AD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C1D2509C2ABAE316009A4C94 /* SalahTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalahTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1D2509D2ABAE8FC009A4C94 /* SettingsRowWithSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowWithSelection.swift; sourceTree = "<group>"; };
+		C1FE5ECD2AB9D7A1009766CB /* PrayerTimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimeManager.swift; sourceTree = "<group>"; };
+		C1FE5ECF2AB9E3ED009766CB /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		C1FE5ED22AB9E552009766CB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C156E01D2AE2710D00E2C3EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C156E0392AE2749B00E2C3EF /* Adhan in Frameworks */,
+				C156E0222AE2710D00E2C3EF /* SwiftUI.framework in Frameworks */,
+				C156E0212AE2710D00E2C3EF /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C16E1C282A88F8CA00D24C23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C16E1C3E2A88F8EC00D24C23 /* Adhan in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C156E0232AE2710D00E2C3EF /* SalahTimeWidget */ = {
+			isa = PBXGroup;
+			children = (
+				C156E03D2AE29C8600E2C3EF /* WidgetEntry.swift */,
+				C156E03B2AE29C1400E2C3EF /* WidgetProvider.swift */,
+				C156E03F2AE29CFF00E2C3EF /* SalahTimeWidgetEntryView.swift */,
+				C156E0242AE2710D00E2C3EF /* SalahTimeWidgetBundle.swift */,
+				C156E0262AE2710D00E2C3EF /* SalahTimeWidget.swift */,
+				C156E0282AE2710E00E2C3EF /* Assets.xcassets */,
+				C156E02A2AE2710E00E2C3EF /* Info.plist */,
+			);
+			path = SalahTimeWidget;
+			sourceTree = "<group>";
+		};
+		C16E1C222A88F8CA00D24C23 = {
+			isa = PBXGroup;
+			children = (
+				C156E0432AE2BB7E00E2C3EF /* SalahTimeWidgetExtension.entitlements */,
+				C1C145BC2ABC478700ACBD32 /* Shared */,
+				C16E1C2D2A88F8CA00D24C23 /* SalahTime */,
+				C16E1C322A88F8CD00D24C23 /* Assets.xcassets */,
+				C1D2509C2ABAE316009A4C94 /* SalahTime.app */,
+				C156E0232AE2710D00E2C3EF /* SalahTimeWidget */,
+				C1C145A72ABC400500ACBD32 /* Frameworks */,
+				C156E0202AE2710D00E2C3EF /* SalahTimeWidgetExtension.appex */,
+			);
+			sourceTree = "<group>";
+		};
+		C16E1C2D2A88F8CA00D24C23 /* SalahTime */ = {
+			isa = PBXGroup;
+			children = (
+				C156E0442AE2BB8E00E2C3EF /* SalahTime.entitlements */,
+				C1C1BF1B2ACE164100506AD4 /* Info.plist */,
+				C16E1C2E2A88F8CA00D24C23 /* SalahTimeApp.swift */,
+				C1C145C12ABC495B00ACBD32 /* Managers */,
+				C16E1C412A88F90500D24C23 /* Views */,
+				C1B601282ABA044500FB232B /* Preview Content */,
+			);
+			path = SalahTime;
+			sourceTree = "<group>";
+		};
+		C16E1C3F2A88F8FE00D24C23 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C176AAF32AAD249A0081D41C /* LocationManager.swift */,
+				C1FE5ECD2AB9D7A1009766CB /* PrayerTimeManager.swift */,
+				C1FE5ECF2AB9E3ED009766CB /* NotificationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		C16E1C412A88F90500D24C23 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C16E1C462A890AAE00D24C23 /* Components */,
+				C16E1C4D2A8924C800D24C23 /* SettingsView.swift */,
+				C16E1C4F2A8924DE00D24C23 /* EventsView.swift */,
+				C176AAFB2AAD24F20081D41C /* ContentView.swift */,
+				C176AAF72AAD24B50081D41C /* QiblaView.swift */,
+				C176AAF92AAD24BA0081D41C /* TabPageView.swift */,
+				C1A12AD72AAC0F3B005B08E1 /* LocationNotFoundView.swift */,
+				C156E0312AE2720800E2C3EF /* PrayerTimesList.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C16E1C462A890AAE00D24C23 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C16E1C472A890ABA00D24C23 /* SalahTimeRowView.swift */,
+				C1D2509D2ABAE8FC009A4C94 /* SettingsRowWithSelection.swift */,
+				C11960022AC3C20000DF8954 /* CalendarRowView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C1B601282ABA044500FB232B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C1C145A72ABC400500ACBD32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1C145A82ABC400500ACBD32 /* WidgetKit.framework */,
+				C1C145AA2ABC400500ACBD32 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1C145BC2ABC478700ACBD32 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				C1FE5ED12AB9E549009766CB /* Extensions */,
+				C16E1C3F2A88F8FE00D24C23 /* Managers */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		C1C145C12ABC495B00ACBD32 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		C1FE5ED12AB9E549009766CB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C1FE5ED22AB9E552009766CB /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C156E01F2AE2710D00E2C3EF /* SalahTimeWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C156E02E2AE2710E00E2C3EF /* Build configuration list for PBXNativeTarget "SalahTimeWidgetExtension" */;
+			buildPhases = (
+				C156E01C2AE2710D00E2C3EF /* Sources */,
+				C156E01D2AE2710D00E2C3EF /* Frameworks */,
+				C156E01E2AE2710D00E2C3EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SalahTimeWidgetExtension;
+			packageProductDependencies = (
+				C156E0382AE2749B00E2C3EF /* Adhan */,
+			);
+			productName = SalahTimeWidgetExtension;
+			productReference = C156E0202AE2710D00E2C3EF /* SalahTimeWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C16E1C2A2A88F8CA00D24C23 /* SalahTime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C16E1C392A88F8CD00D24C23 /* Build configuration list for PBXNativeTarget "SalahTime" */;
+			buildPhases = (
+				C16E1C272A88F8CA00D24C23 /* Sources */,
+				C16E1C282A88F8CA00D24C23 /* Frameworks */,
+				C16E1C292A88F8CA00D24C23 /* Resources */,
+				C176AAC22AAD21050081D41C /* Embed Watch Content */,
+				C1728E742ABB149700C924AA /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C156E02C2AE2710E00E2C3EF /* PBXTargetDependency */,
+			);
+			name = SalahTime;
+			packageProductDependencies = (
+				C16E1C3D2A88F8EC00D24C23 /* Adhan */,
+			);
+			productName = SalahTime;
+			productReference = C1D2509C2ABAE316009A4C94 /* SalahTime.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C16E1C232A88F8CA00D24C23 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					C156E01F2AE2710D00E2C3EF = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					C16E1C2A2A88F8CA00D24C23 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = C16E1C262A88F8CA00D24C23 /* Build configuration list for PBXProject "SalahTime" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C16E1C222A88F8CA00D24C23;
+			packageReferences = (
+				C16E1C3C2A88F8EC00D24C23 /* XCRemoteSwiftPackageReference "adhan-swift" */,
+			);
+			productRefGroup = C16E1C222A88F8CA00D24C23;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C16E1C2A2A88F8CA00D24C23 /* SalahTime */,
+				C156E01F2AE2710D00E2C3EF /* SalahTimeWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C156E01E2AE2710D00E2C3EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C156E0292AE2710E00E2C3EF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C16E1C292A88F8CA00D24C23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C16E1C332A88F8CD00D24C23 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C156E01C2AE2710D00E2C3EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C156E0402AE29CFF00E2C3EF /* SalahTimeWidgetEntryView.swift in Sources */,
+				C156E0352AE273CA00E2C3EF /* PrayerTimeManager.swift in Sources */,
+				C156E0272AE2710D00E2C3EF /* SalahTimeWidget.swift in Sources */,
+				C156E0252AE2710D00E2C3EF /* SalahTimeWidgetBundle.swift in Sources */,
+				C156E03A2AE274C800E2C3EF /* Extensions.swift in Sources */,
+				C156E0422AE29D2400E2C3EF /* WidgetEntry.swift in Sources */,
+				C156E0362AE273FE00E2C3EF /* PrayerTimesList.swift in Sources */,
+				C156E0342AE273CA00E2C3EF /* NotificationManager.swift in Sources */,
+				C156E0332AE273CA00E2C3EF /* LocationManager.swift in Sources */,
+				C156E0412AE29D1E00E2C3EF /* WidgetProvider.swift in Sources */,
+				C156E0372AE2743800E2C3EF /* SalahTimeRowView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C16E1C272A88F8CA00D24C23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1D2509E2ABAE8FC009A4C94 /* SettingsRowWithSelection.swift in Sources */,
+				C16E1C4E2A8924C800D24C23 /* SettingsView.swift in Sources */,
+				C16E1C482A890ABA00D24C23 /* SalahTimeRowView.swift in Sources */,
+				C16E1C2F2A88F8CA00D24C23 /* SalahTimeApp.swift in Sources */,
+				C1A12AD82AAC0F3B005B08E1 /* LocationNotFoundView.swift in Sources */,
+				C1FE5ED02AB9E3ED009766CB /* NotificationManager.swift in Sources */,
+				C176AAFA2AAD24BA0081D41C /* TabPageView.swift in Sources */,
+				C1FE5ECE2AB9D7A1009766CB /* PrayerTimeManager.swift in Sources */,
+				C1FE5ED32AB9E552009766CB /* Extensions.swift in Sources */,
+				C176AB132AAD26180081D41C /* ContentView.swift in Sources */,
+				C176AAF42AAD249A0081D41C /* LocationManager.swift in Sources */,
+				C176AAF82AAD24B50081D41C /* QiblaView.swift in Sources */,
+				C156E0322AE2720800E2C3EF /* PrayerTimesList.swift in Sources */,
+				C16E1C502A8924DE00D24C23 /* EventsView.swift in Sources */,
+				C11960032AC3C20000DF8954 /* CalendarRowView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C156E02C2AE2710E00E2C3EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C156E01F2AE2710D00E2C3EF /* SalahTimeWidgetExtension */;
+			targetProxy = C156E02B2AE2710E00E2C3EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C156E02F2AE2710E00E2C3EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = SalahTimeWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V992GDVW43;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SalahTimeWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SalahTimeWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alijaver.SalahTime.SalahTimeWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C156E0302AE2710E00E2C3EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = SalahTimeWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V992GDVW43;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SalahTimeWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SalahTimeWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alijaver.SalahTime.SalahTimeWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C16E1C372A88F8CD00D24C23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		C16E1C382A88F8CD00D24C23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		C16E1C3A2A88F8CD00D24C23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SalahTime/SalahTime.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SalahTime/Preview Content\"";
+				DEVELOPMENT_TEAM = V992GDVW43;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SalahTime/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Salah Time";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need location services!";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alijaver.SalahTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C16E1C3B2A88F8CD00D24C23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SalahTime/SalahTimeRelease.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SalahTime/Preview Content\"";
+				DEVELOPMENT_TEAM = V992GDVW43;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SalahTime/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Salah Time";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need location services!";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alijaver.SalahTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C156E02E2AE2710E00E2C3EF /* Build configuration list for PBXNativeTarget "SalahTimeWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C156E02F2AE2710E00E2C3EF /* Debug */,
+				C156E0302AE2710E00E2C3EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C16E1C262A88F8CA00D24C23 /* Build configuration list for PBXProject "SalahTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C16E1C372A88F8CD00D24C23 /* Debug */,
+				C16E1C382A88F8CD00D24C23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C16E1C392A88F8CD00D24C23 /* Build configuration list for PBXNativeTarget "SalahTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C16E1C3A2A88F8CD00D24C23 /* Debug */,
+				C16E1C3B2A88F8CD00D24C23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C16E1C3C2A88F8EC00D24C23 /* XCRemoteSwiftPackageReference "adhan-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/batoulapps/adhan-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C156E0382AE2749B00E2C3EF /* Adhan */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C16E1C3C2A88F8EC00D24C23 /* XCRemoteSwiftPackageReference "adhan-swift" */;
+			productName = Adhan;
+		};
+		C16E1C3D2A88F8EC00D24C23 /* Adhan */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C16E1C3C2A88F8EC00D24C23 /* XCRemoteSwiftPackageReference "adhan-swift" */;
+			productName = Adhan;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C16E1C232A88F8CA00D24C23 /* Project object */;
+}
