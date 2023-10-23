@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C11960032AC3C20000DF8954 /* CalendarRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11960022AC3C20000DF8954 /* CalendarRowView.swift */; };
+		C1461B082AE65A5D00EAE6E5 /* LeftTimeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1461B072AE65A5D00EAE6E5 /* LeftTimeSection.swift */; };
+		C1461B092AE65AEF00EAE6E5 /* LeftTimeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1461B072AE65A5D00EAE6E5 /* LeftTimeSection.swift */; };
 		C156E0212AE2710D00E2C3EF /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1C145A82ABC400500ACBD32 /* WidgetKit.framework */; };
 		C156E0222AE2710D00E2C3EF /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1C145AA2ABC400500ACBD32 /* SwiftUI.framework */; };
 		C156E0252AE2710D00E2C3EF /* SalahTimeWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C156E0242AE2710D00E2C3EF /* SalahTimeWidgetBundle.swift */; };
@@ -78,6 +80,7 @@
 
 /* Begin PBXFileReference section */
 		C11960022AC3C20000DF8954 /* CalendarRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarRowView.swift; sourceTree = "<group>"; };
+		C1461B072AE65A5D00EAE6E5 /* LeftTimeSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftTimeSection.swift; sourceTree = "<group>"; };
 		C156E0202AE2710D00E2C3EF /* SalahTimeWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SalahTimeWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		C156E0242AE2710D00E2C3EF /* SalahTimeWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalahTimeWidgetBundle.swift; sourceTree = "<group>"; };
 		C156E0262AE2710D00E2C3EF /* SalahTimeWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalahTimeWidget.swift; sourceTree = "<group>"; };
@@ -193,6 +196,7 @@
 				C176AAF92AAD24BA0081D41C /* TabPageView.swift */,
 				C1A12AD72AAC0F3B005B08E1 /* LocationNotFoundView.swift */,
 				C156E0312AE2720800E2C3EF /* PrayerTimesList.swift */,
+				C1461B072AE65A5D00EAE6E5 /* LeftTimeSection.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -360,6 +364,7 @@
 				C156E0402AE29CFF00E2C3EF /* SalahTimeWidgetEntryView.swift in Sources */,
 				C156E0352AE273CA00E2C3EF /* PrayerTimeManager.swift in Sources */,
 				C156E0272AE2710D00E2C3EF /* SalahTimeWidget.swift in Sources */,
+				C1461B092AE65AEF00EAE6E5 /* LeftTimeSection.swift in Sources */,
 				C156E0252AE2710D00E2C3EF /* SalahTimeWidgetBundle.swift in Sources */,
 				C156E03A2AE274C800E2C3EF /* Extensions.swift in Sources */,
 				C156E0422AE29D2400E2C3EF /* WidgetEntry.swift in Sources */,
@@ -390,6 +395,7 @@
 				C156E0322AE2720800E2C3EF /* PrayerTimesList.swift in Sources */,
 				C16E1C502A8924DE00D24C23 /* EventsView.swift in Sources */,
 				C11960032AC3C20000DF8954 /* CalendarRowView.swift in Sources */,
+				C1461B082AE65A5D00EAE6E5 /* LeftTimeSection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,13 +9,20 @@ import SwiftUI
 
 struct SalahTimeWidgetEntryView : View {
     
+    @Environment(\.widgetFamily) var family
     var entry: WidgetProvider.Entry
     
     var body: some View {
         VStack {
             if let prayerTimes = entry.prayerTimes {
-                PrayerTimesList(prayers: prayerTimes)
-                    .environmentObject(LocationManager())
+                switch family {
+                case .systemSmall:
+                    LeftTimeSection(prayers: prayerTimes)
+                case .systemLarge:
+                    PrayerTimesList(prayers: prayerTimes)
+                        .environmentObject(LocationManager())
+                default: Text("Not implemented!")
+                }
             } else {
                 Text("N/A")
             }

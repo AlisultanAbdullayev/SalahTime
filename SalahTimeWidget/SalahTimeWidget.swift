@@ -23,13 +23,13 @@ struct SalahTimeWidget: Widget {
                     .background()
             }
         }
-                            .supportedFamilies([.systemLarge])
+                            .supportedFamilies([.systemSmall, .systemLarge])
                             .configurationDisplayName("My Widget")
                             .description("This is an example widget.")
     }
 }
 
-#Preview(as: .systemMedium) {
+#Preview(as: .systemSmall) {
     SalahTimeWidget()
 } timeline: {
     WidgetEntry(date: .now, prayerTimes: PrayerTimeManager.shared.prayerTimes)

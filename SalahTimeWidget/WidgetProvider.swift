@@ -31,7 +31,7 @@ struct WidgetProvider: TimelineProvider {
                                        completion: completion)
     }
     
-    func fetchPrayerTimeData(date: Date,
+    private func fetchPrayerTimeData(date: Date,
                              prayerManager: PrayerTimeManager = PrayerTimeManager.shared,
                              locationManager: LocationManager,
                              completion: @escaping (WidgetEntry) -> Void) {
@@ -49,8 +49,7 @@ struct WidgetProvider: TimelineProvider {
         }
     }
     
-    
-    func createPrayerTimeLine(date: Date,
+    private func createPrayerTimeLine(date: Date,
                              prayerManager: PrayerTimeManager = PrayerTimeManager.shared,
                              locationManager: LocationManager,
                              completion: @escaping (Timeline<WidgetEntry>) -> Void) {
@@ -61,12 +60,30 @@ struct WidgetProvider: TimelineProvider {
                                                     madhab: prayerManager.madhab,
                                                     method: prayerManager.method)
             }
-            let prayerTimes = prayerManager.prayerTimes
+            guard let prayerTimes = prayerManager.prayerTimes else { print("Prayer times is null"); return }
+            let nextRefresh = nextRefreshTime(after: Date(),
+                                              prayerTimes: [prayerTimes.fajr,
+                                                            prayerTimes.sunrise,
+                                                            prayerTimes.dhuhr,
+                                                            prayerTimes.asr,
+                                                            prayerTimes.maghrib,
+                                                            prayerTimes.isha
+                                                           ])
             let entry = WidgetEntry(date: date, prayerTimes: prayerTimes)
             let timeline = Timeline(entries: [entry],
-                                    policy: .atEnd)
+                                    policy: .after(nextRefresh))
             completion(timeline)
         }
+    }
+    
+    private func nextRefreshTime(after currentDate: Date, prayerTimes: [Date]) -> Date {
+        for prayerTime in prayerTimes.sorted() {
+            if currentDate < prayerTime {
+                return prayerTime
+            }
+        }
+        // If no more prayer times today, set the next refresh to Fajr of the next day
+        return prayerTimes.first!.addingTimeInterval(24 * 60 * 60)
     }
 
 }

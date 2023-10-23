@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Adhan
+import WidgetKit
 
 struct ContentView: View {
     
@@ -33,26 +34,35 @@ struct ContentView: View {
                 Form {
                     dateAndHijriSection
                     if let prayerTimes = prayerTimeManager.prayerTimes {
-                        leftTimeSection(prayers: prayerTimes)
+                        LeftTimeSection(prayers: prayerTimes)
+//                        leftTimeSection(prayers: prayerTimes)
                         prayerTimesList(prayers: prayerTimes)
                     } else {
                         progressView
                     }
                 }
                 .task {
-                    self.locationManager.startUpdatingHeading()
+                    self.locationManager.startUpdatingLocation()
                 }
                 .onChange(of: prayerTimeManager.madhab) { _, _ in
                     self.prayerTimeManager.fetchPrayerTimesForMonth(tempLocation: locationManager.userLocation,
                                                                     madhab: prayerTimeManager.madhab,
                                                                     method: prayerTimeManager.method)
+//                    self.prayerTimeManager.fetchPrayerTime(tempLocation: locationManager.userLocation, 
+//                                                           madhab: prayerTimeManager.madhab,
+//                                                           method: prayerTimeManager.method)
                     self.notificationManager.schedulePrayerTimeNotifications()
+                    WidgetCenter.shared.reloadAllTimelines()
                 }
                 .onChange(of: prayerTimeManager.method) { _, _ in
                     self.prayerTimeManager.fetchPrayerTimesForMonth(tempLocation: locationManager.userLocation,
                                                                     madhab: prayerTimeManager.madhab,
                                                                     method: prayerTimeManager.method)
+//                    self.prayerTimeManager.fetchPrayerTime(tempLocation: locationManager.userLocation,
+//                                                           madhab: prayerTimeManager.madhab,
+//                                                           method: prayerTimeManager.method)
                     self.notificationManager.schedulePrayerTimeNotifications()
+                    WidgetCenter.shared.reloadAllTimelines()
                 }
             }
         }
@@ -96,26 +106,7 @@ struct ContentView: View {
         }
     }
     
-    @ViewBuilder
-    private func leftTimeSection(prayers: PrayerTimes) -> some View {
-        Section {
-            if let nextPrayer = prayers.nextPrayer() {
-                Text(prayers.time(for: nextPrayer), style: .timer)
-                    .frame(maxWidth: .infinity, alignment: .center)
-            } else {
-                Text(prayers.fajr.addingTimeInterval(86400), style: .timer)
-                    .frame(maxWidth: .infinity, alignment: .center)
-            }
-        } header: {
-            Text("Left time")
-                .foregroundColor(.accentColor)
-                .font(.body)
-                .fontWeight(.regular)
-        }
-        .font(.largeTitle)
-        .fontWeight(.bold)
-        .fontDesign(.rounded)
-    }
+
     
     @ViewBuilder
     private func prayerTimesList(prayers: PrayerTimes) -> some View {
