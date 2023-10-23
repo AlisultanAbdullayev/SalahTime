@@ -112,12 +112,13 @@ final class NotificationManager: ObservableObject {
         
         notificationCenter.removeAllPendingNotificationRequests()
         
-        guard let prayerTimeIndex = prayerTimeManager.prayerTimeIndex else {
-            print("Can not get prayerTimeIndex")
-            return
-        }
+//        guard let prayerTimeIndex = prayerTimeManager.prayerTimeIndex else {
+//            print("Can not get prayerTimeIndex")
+//            return
+//        }
         
-        let prayerTimes = prayerTimeManager.prayerTimesArr[prayerTimeIndex]
+//        let prayerTimes = prayerTimeManager.prayerTimesArr[prayerTimeIndex]
+        guard let prayerTimes = prayerTimeManager.prayerTimes else { print("No prayerTimes available!"); return }
 //
 //        let range = prayerTimeIndex..<min(prayerTimeIndex + 6, prayerTimeManager.prayerTimesArr.count - 1)
 //        
@@ -162,7 +163,7 @@ final class NotificationManager: ObservableObject {
 //            }
 //        })
     }
-    
+//    
 //    @MainActor
 //    private func scheduleNotificationsPerEachDay(prayerTime: PrayerTimes) {
 //        let prayerNames = ["Fajr", "Sunrise", "Dhuhr", "Asr", "Maghrib", "Isha"]
